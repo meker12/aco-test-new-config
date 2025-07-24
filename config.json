@@ -39,3 +39,43 @@
     }
   }
 }
+
+{
+  "public": {
+    "default": {
+      "commerce-core-endpoint": "https://na1-sandbox.api.commerce.adobe.com/8idEEDDiVwjCEJAyB5kjfi/graphql",
+      "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/8idEEDDiVwjCEJAyB5kjfi/graphql",
+      "headers": {
+        "all": {
+          "Store": "default"
+        },
+        "cs": {
+          "ac-view-id": "{{catalog-view-id-required}}",
+          "ac-source-locale": "{{locale-value-optional-required}}"  # Example, `en-us`
+          "ac-policy": "{{ac-policy-optional}}"
+          "ac-price-book-id": "{{price-book-id-optional}}",   # Example, `west_coast_inc`
+        }
+      },
+      "analytics": {                         
+        "base-currency-code": "USD",
+        "environment": "Production",
+        "environment-id": "8idEEDDiVwjCEJAyB5kjfi",
+        "store-code": "west_coast_inc",
+        "store-id": 1,
+        "store-name": "ACO Store",
+        "store-url": "https://main--boilerplate-aco--adobe-commerce.aem.live",
+        "store-view-code": "default",
+        "store-view-id": 1,
+        "store-view-name": "Default Store View",
+        "website-code": "default",
+        "website-id": 1,
+        "website-name": "Main Website"
+      },
+      "plugins": {
+        "picker": {
+          "rootCategory": "2"
+        }
+      }
+    }
+  }
+}
